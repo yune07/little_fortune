@@ -41,12 +41,12 @@ body {
   align-items: center;
   justify-content: center;
 
+
+}
   model-viewer{
     width: 100%;
-    height:1000px;
+    height:50vh;
   }
-}
-
 .fortune_cookie.clicked {
   transform: scale(0.95);
 }
