@@ -35,14 +35,14 @@ body {
 }
 
 .fortune_cookie {
-  width: 30vw;
+  width: 80vw;
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
   model-viewer{
-    width: 1;
+    width: 100%;
     height:1000px;
   }
 }
