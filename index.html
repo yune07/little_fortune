@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Little Fortune</title>
-  <link rel="stylesheet" href="css/style.css">
-  
+  <title>Homepage</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Clover Rabbit</h1>
-    <p><br><br>
+  <div class="home">
+    <h1>Welcome</h1>
+    <p>Click to open the experience</p>
 
-    </p>
-
-    <div class="fortune_cookie" id="cookie">
-
-      <model-viewer 
-        src="assets/rabbit_clover_v0.5.glb" 
-        alt="3D Model" 
-        auto-rotate camera-controls disable-pan
-        field-of-view="10deg"
-        camera-orbit="0deg 70deg 0m"
-        interaction-prompt="none";
-        >
-      </model-viewer>
-
-
-    </div>
-    
-    <div class="fortune_message" id="message">
-
-    </div>
-    
-  
-
+    <a href="rabbit.html" class="enter_button">
+      Enter <br/>
+    </a>
+    <a href="clover.html" class="enter_button">
+      404
+    </a>
   </div>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/threeScene.js"></script>
 
 </body>
 </html>

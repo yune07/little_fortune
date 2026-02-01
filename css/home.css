@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  text-align: center;
+  background: white;
+  padding: 60px;
+  border-radius: 16px;
+}
+
+.enter_button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.enter_button:hover {
+  background: #444;
+  transform: scale(1.05);
+}
