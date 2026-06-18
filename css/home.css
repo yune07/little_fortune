@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+.home {
+  text-align: center;
+}
+
 h1 {
   
   font-family: "cooper", sans-serif;
@@ -75,19 +79,72 @@ h1 {
     transform: translateY(0) rotate(0deg);
   }
 }
+.bunny-enter {
+  position: fixed;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
 
-.enter_button {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 12px 32px;
-  background: #222;
-  color: white;
+  width: clamp(170px, 24vw, 280px);
+
+  display: block;
   text-decoration: none;
-  border-radius: 8px;
-  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+
+  transition: transform 0.25s ease;
 }
 
-.enter_button:hover {
-  background: #444;
-  transform: scale(1.05);
+.peek-bunny {
+  width: 100%;
+  display: block;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 32%;
+  right: -25px;
+
+  padding: 8px 8px;
+
+  font-family: "Cooper Black", "cooper", serif;
+  font-size: 12px;
+  color: #7a4f3f;
+
+  background: #fff1b8;
+  border: 3px solid #7a4f3f;
+  border-radius: 999px;
+
+  box-shadow:
+    0 5px 0 #e7b86f,
+    0 10px 16px rgba(90, 60, 50, 0.22);
+}
+
+/* kleines Dreieck der Sprechblase */
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+
+  width: 8px;
+  height: 8px;
+
+  background: #fff1b8;
+  border-left: 3px solid #7a4f3f;
+  border-bottom: 3px solid #7a4f3f;
+  border-radius: 4px;
+
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bunny-enter:hover {
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.bunny-enter:hover .speech-bubble {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+.bunny-enter:active {
+  transform: translateX(-50%) translateY(-3px) scale(0.98);
 }
