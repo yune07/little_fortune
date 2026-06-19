@@ -95,19 +95,19 @@ h1 {
 }
 
 .peek-bunny {
-  width: 100%;
+  width: 120%;
   display: block;
 }
 
 .speech-bubble {
   position: absolute;
   top: 32%;
-  right: -25px;
+  right: -70px;
 
-  padding: 8px 8px;
+  padding: 10px 10px;
 
   font-family: "Cooper Black", "cooper", serif;
-  font-size: 12px;
+  font-size: 16px;
   color: #7a4f3f;
 
   background: #fff1b8;
@@ -142,7 +142,7 @@ h1 {
 }
 
 .bunny-enter:hover .speech-bubble {
-  transform: rotate(-3deg) scale(1.05);
+  transform: rotate(-10deg) scale(1.05);
 }
 
 .bunny-enter:active {
